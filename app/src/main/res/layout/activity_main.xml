@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_bottom"
+        />
 
-
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+<com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/menu_bottom"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:background="#ffff"
-        android:elevation="16dp"
+        android:layout_alignParentBottom="true"
         android:gravity="bottom"
         app:cnb_menuResource="@menu/bottom_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
         tools:targetApi="lollipop" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

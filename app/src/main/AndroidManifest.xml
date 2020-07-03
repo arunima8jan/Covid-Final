@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.example.covid_19tracker" >
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -13,18 +14,19 @@
         android:theme="@style/AppTheme" >
         <activity android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme"
-            android:noHistory="true">
+            android:noHistory="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoadingScreen"
-            android:theme="@style/LoadingTheme"
-            />
 
-        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+        />
 
         <meta-data
             android:name="preloaded_fonts"

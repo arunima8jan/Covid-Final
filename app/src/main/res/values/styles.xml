@@ -17,8 +17,5 @@
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="color">@color/colorPrimary</item>
     </style>
-    <style name="LoadingTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="color">@color/colorPrimary</item>
-    </style>
 
 </resources>

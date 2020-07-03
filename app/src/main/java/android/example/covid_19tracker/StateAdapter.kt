@@ -18,9 +18,12 @@ class StateAdapter (val list: List<StatewiseItem>):BaseAdapter(){
         return view
     }
 
+
+
     override fun getItem(p0: Int)=list[p0]
 
     override fun getItemId(p0: Int)=p0.toLong()
 
     override fun getCount()=list.size
+
 }
