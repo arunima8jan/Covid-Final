@@ -1,5 +1,4 @@
 # Covid-Final
-This is my project for 30 days of kotlin with google developers.<br />
 This app keeps a track of covid patients across all the states in India.<br />
 <img src="https://github.com/arunima8jan/Covid-Final/blob/master/images/splash.jpg?raw=true" width="300">
 <img src="https://github.com/arunima8jan/Covid-Final/blob/master/images/home.jpg?raw=true" width="300">
